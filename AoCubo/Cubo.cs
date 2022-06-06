@@ -11,9 +11,6 @@ namespace AoCubo
         public double Aocubo(ref int num)
         {
             return num = num * num * num;
-        }
-               
-    }
-
-    
+        }               
+    }    
 }
