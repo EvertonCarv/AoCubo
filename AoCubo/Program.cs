@@ -12,11 +12,3 @@ int numero = int.Parse(entrada);
 teste.Aocubo(ref numero);
 
 Console.WriteLine($" O valor do cubo é {numero}.");
-
-
-
-
-
-
-
-
