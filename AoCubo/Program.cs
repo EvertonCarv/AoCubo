@@ -1,14 +1,16 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using AoCubo;
 
+ObjectoDeNegocio objectoDeNegocioCubo = new ObjectoDeNegocio(new Cubo());
+ObjectoDeNegocio objectoDeNegocioQuadrado = new ObjectoDeNegocio(new Quadrado());
 
+Console.WriteLine($" Digite um numero para saber seu resultado ao Cubo.");
 
+string input = ConsoleExtensions.ReadWithOffset();
+int number = int.Parse(input);
 
-Cubo teste = new Cubo();
+var resultCubo = objectoDeNegocioCubo.Calcular(number);
+var resultQuadrado = objectoDeNegocioQuadrado.Calcular(number);
 
-string entrada = Console.ReadLine();
-int numero = int.Parse(entrada);
-
-teste.Aocubo(ref numero);
-
-Console.WriteLine($" O valor do cubo é {numero}.");
+Console.WriteLine($" O valor do cubo é {resultCubo}...");
+Console.WriteLine($" O valor do quadrado é {resultQuadrado}...");
